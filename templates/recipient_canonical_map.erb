@@ -1,0 +1,15 @@
+# Whitelisted addresses (i.e. developers/testing)
+<% for @address in @config['whitelist_addresses'] %>
+/<%= @address %>/ <%= @address %>
+<% end %>
+
+/ross@golder\.org/ ross@golder.org
+/rossigee@gmail\.com/ rossigee@gmail.com 
+
+# Or whole domains...
+<% for @domain in @config['whitelist_domains'] %>
+/(.+)@<%= @domain %>/ <%= @domain %>
+<% end %>
+
+# Dump anything else in a designated local user's mail folder
+/.+@.+/	<%= @config['default_recipient'] %>

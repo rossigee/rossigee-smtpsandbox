@@ -1,0 +1,19 @@
+{
+  "name": "rossigee-smtpsandbox",
+  "version": "0.1.0",
+  "author": "Ross Golder",
+  "license": "GPL",
+  "summary": "A module to set up a postfix instance that captures all outbound mail to a mailbox, except where whitelisted.",
+  "source": "https://github.com/rossigee/rossigee-smtpsandbox",
+  "project_page": "https://forge.puppetlabs.com/rossigee/smtpsandbox",
+  "issues_url": "https://github.com/rossigee/rossigee-smtpsandbox/issues",
+  "operatingsystem_support": [
+    {
+    "operatingsystem": "Ubuntu",
+    "operatingsystemrelease": [ "14.04" ]
+    }
+   ],
+  "dependencies": [
+    { "name": "puppetlabs/stdlib", "version_requirement": ">=3.2.0 <5.0.0" }
+  ]
+}
