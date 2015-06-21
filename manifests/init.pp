@@ -1,6 +1,6 @@
 # Sets up an SMTP service that delivers all mail to a Maildir
 class smtpsandbox {
-    $_config = hiera('profile')
+    $_config = hiera_hash('profile')
     $config = $_config['smtpsandbox']
 
     package { ['postfix', 'postfix-pcre', 'make', 'mailutils']:
