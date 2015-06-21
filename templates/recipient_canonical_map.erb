@@ -1,14 +1,17 @@
+<% if @config.has_key?('whitelist_addresses') %>
 # Whitelisted addresses (i.e. developers/testing)
 <% for @address in @config['whitelist_addresses'] %>
 /<%= @address %>/ <%= @address %>
 <% end %>
 
-/ross@golder\.org/ ross@golder.org
-/rossigee@gmail\.com/ rossigee@gmail.com 
+<% end %>
 
-# Or whole domains...
+<% if @config.has_key?('whitelist_domains') %>
+# Whitelisted domains...
 <% for @domain in @config['whitelist_domains'] %>
 /(.+)@<%= @domain %>/ <%= @domain %>
+<% end %>
+
 <% end %>
 
 # Dump anything else in a designated local user's mail folder
