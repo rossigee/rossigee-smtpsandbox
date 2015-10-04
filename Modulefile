@@ -1,5 +1,5 @@
 name    'rossigee/smtpsandbox'
-version '0.1.3'
+version '0.1.4'
 source 'https://github.com/rossigee/rossigee-smtpsandbox'
 author 'Ross Golder'
 license 'GPL'
