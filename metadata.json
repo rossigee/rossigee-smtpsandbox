@@ -1,6 +1,6 @@
 {
   "name": "rossigee-smtpsandbox",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "Ross Golder",
   "license": "GPL",
   "summary": "A module to set up a postfix instance that captures all outbound mail to a mailbox, except where whitelisted.",
