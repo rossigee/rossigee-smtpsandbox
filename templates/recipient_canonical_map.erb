@@ -9,7 +9,7 @@
 <% if @config.has_key?('whitelist_domains') %>
 # Whitelisted domains...
 <% for @domain in @config['whitelist_domains'] %>
-/(.+)@<%= @domain %>/ <%= @domain %>
+/(.+)@<%= @domain %>/ $1@<%= @domain %>
 <% end %>
 
 <% end %>
